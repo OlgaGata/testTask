@@ -1,0 +1,191 @@
+@import "variables";
+
+html,body
+{
+  padding: 0;
+  margin: 0;
+}
+.header__element
+{
+  font-family: $base_fontFamily;
+  font-style: normal;
+  font-weight: bold;
+  font-size: $header_fontSize;
+  line-height: 49px;
+  text-align: center;
+  color: #45852D;
+  margin-top: 35px;
+}
+.filter
+{
+  margin-top: 45px;
+
+  .filter__label
+  {
+    font-family: $base_fontFamily;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $base_fontSize;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    color: $black_color;
+    margin-left: 50px;
+
+    .filter__entry_field
+    {
+      width: 418px;
+      height: 50px;
+      border: $border;
+      box-sizing: border-box;
+      border-radius: 25px;
+      margin-left: 56px;
+      padding-left: 20px;
+    }
+  }
+}
+
+
+@media all and (max-width: 600px)
+{
+  .filter__entry_field
+  {
+    width: 250px;
+  }
+  .header__element
+  {
+    font-size: 30px;
+  }
+}
+
+.content
+{
+  margin: 45px 50px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  & a
+  {
+    text-decoration: none;
+    color: $black_color;
+    font-family: $base_fontFamily;
+    font-style: normal;
+  }
+  .content__card
+  {
+    width: 379px;
+    height: 381px;
+    background: #F8F8F8;
+    border: $border;
+    box-sizing: border-box;
+    margin-right: 22px;
+    margin-bottom: 40px;
+    .content__card_img
+    {
+      width: 377px;
+      height: 227px;
+      position: relative;
+
+      .content__card_img_tag
+      {
+        position: absolute;
+        height: 30px;
+        top: 87%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $base_fontFamily;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #FFFFFF;
+      }
+      .IndependentLiving
+      {
+        width: 134px;
+        left: 64.5%;
+        background: #006F79;
+      }
+      .SupportAvailable
+      {
+        width: 204px;
+        left: 46%;
+        background: #EC6608;
+      }
+    }
+    .content__card_description
+    {
+      margin-left: 20px;
+      .content__card_description_title
+      {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        margin-top: 15px;
+        margin-bottom: 0;
+      }
+      .content__card_description_address
+      {
+        font-weight: normal;
+        font-size: $base_fontSize;
+        line-height: 22px;
+        margin-top: 2px;
+        margin-bottom: 0;
+      }
+      .content__card_description_sale
+      {
+        font-weight: normal;
+        font-size: $base_fontSize;
+        line-height: 22px;
+        margin-top: 15px;
+        margin-bottom: 0;
+      }
+      .content__card_description_add
+      {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: 7px;
+      }
+    }
+  }
+}
+
+.button
+{
+  display: flex;
+  justify-content: center;
+
+  .button__add_content
+  {
+    width: 150px;
+    height: 50px;
+    border: $border;
+    box-sizing: border-box;
+    border-radius: 25px;
+    background-color: #f8f8f8;
+    font-family: $base_fontFamily;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $base_fontSize;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    color: $black_color;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
